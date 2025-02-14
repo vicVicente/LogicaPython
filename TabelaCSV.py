@@ -1,7 +1,7 @@
 import pandas as pd
 
 #Aqui estou abrindo o arquivo CSV, criando uma "coluna virtual", onde eu adicono o faturamento por produto
-tabela = pd.read_csv("Vendas.csv", sep=";")
+tabela = pd.read_csv("Vendas/Vendas.csv", sep=";")
 tabela["faturamento"] = tabela["quantidade"] * tabela["preco_unitario"]
 faturamentoProduto = tabela.set_index("produto")["faturamento"]
 
