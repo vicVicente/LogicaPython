@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "fe6243fd-f3d8-4bf1-a75c-0e7ee55c2a33",
 		"name": "ProcessoSeletivo",
+		"description": "Para que os endPoints funcionem, deve iniciar os respectivos serviços:  \nSimpleApi.py  \n\\- Saudação\n\n\\- Soma\n\nLoginCorrecao.py\n\n\\- Login",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "12724013"
 	},
@@ -36,6 +37,37 @@
 		},
 		{
 			"name": "Soma",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"num1\": 2,\r\n    \"num2\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/soma",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"soma"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
 			"request": {
 				"method": "POST",
 				"header": [],
