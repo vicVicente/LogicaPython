@@ -4,7 +4,7 @@ Comando para instalar as dependências do sistema:
 pip install pandas flask bcrypt
 ```
 
-Comando usados para iniciar o container:
+Comandos usados para iniciar o container:
 
 Para criar a imagem docker:
 ```
